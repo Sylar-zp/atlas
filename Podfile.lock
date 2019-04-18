@@ -1,0 +1,53 @@
+PODS:
+  - Alamofire (4.8.0)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
+  - AlamofireObjectMapper (5.2.0):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - CocoaLumberjack (3.5.2):
+    - CocoaLumberjack/Core (= 3.5.2)
+  - CocoaLumberjack/Core (3.5.2)
+  - ObjectMapper (3.4.2)
+  - SDWebImage/Core (5.0.1)
+  - SDWebImageSVGCoder (0.2.0):
+    - SDWebImage/Core (~> 5.0)
+    - SVGKit (>= 2.1)
+  - SVGKit (2.1.0):
+    - CocoaLumberjack (~> 3.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire (= 4.8.0)
+  - AlamofireImage
+  - AlamofireObjectMapper
+  - ObjectMapper
+  - SDWebImageSVGCoder
+  - SwiftyJSON (= 3.1.4)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs:
+    - Alamofire
+    - AlamofireImage
+    - AlamofireObjectMapper
+    - CocoaLumberjack
+    - ObjectMapper
+    - SDWebImage
+    - SDWebImageSVGCoder
+    - SVGKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
+  CocoaLumberjack: 118bf4a820efc641f79fa487b75ed928dccfae23
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  SDWebImage: 27dd2c9ea07a2252f94557c9fbb6105ee94b74c9
+  SDWebImageSVGCoder: 61f60a3064db079de646a34a5f5aa8d3ac258345
+  SVGKit: 8a2fc74258bdb2abb54d3b65f3dd68b0277a9c4d
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: a8e8b91b460f1d029e998972bff62ddf32011b24
+
+COCOAPODS: 1.6.1
