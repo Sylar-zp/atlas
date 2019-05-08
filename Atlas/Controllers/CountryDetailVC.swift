@@ -67,6 +67,12 @@ final class CountryDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupData()
+
+    }
+
+    private func setupData() {
+        cleanData()
         setupView()
         initCell()
         setupMap()
@@ -79,7 +85,6 @@ final class CountryDetailVC: UIViewController {
     }
 
     private func setupView() {
-
 
         navigationItem.title = data.name
 
@@ -173,13 +178,12 @@ extension CountryDetailVC: UITableViewDataSource {
 
 extension CountryDetailVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        guard borderData.count < indexPath.row else { return }
+
         data = borderData[indexPath.row]
         flag = localData.filter {$0.code == data.alpha2Code }.first?.emoji ?? ""
 
-        cleanData()
-        setupView()
-        initCell()
-        setupMap()
-        fetchBorder(codes: data.borders ?? [])
+        setupData()
     }
 }

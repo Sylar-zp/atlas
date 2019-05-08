@@ -25,7 +25,6 @@ class ServerManager: NSObject {
 
     private override init() { }
 
-
     /**
      * TODO: Comments
      */
@@ -170,7 +169,6 @@ class ServerManager: NSObject {
                 }
             }
 
-
             // Set Body
             var body: [String: AnyObject]? = nil
             if bodyParams != nil {
@@ -247,9 +245,6 @@ class ServerManager: NSObject {
 
             self.manager.request(url!, method: methods, parameters: parameters, encoding:  JSONEncoding.default, headers: headers).responseObject(keyPath: keyPath) { (response: DataResponse <T>) in
 
-                print("Request: \(String(describing: response.request!))")   // original url request
-                print("Result: \(response.result)")                         // response serialization result
-
                 if let js = String(data: response.data!, encoding: String.Encoding.utf8) {
                     let dic = JSON.init(parseJSON: js)
                         //JSON.parse(js)
@@ -309,9 +304,6 @@ class ServerManager: NSObject {
             // let currentThreadIsMain:Bool = Thread.isMainThread;
 
             self.manager.request(url!, method: methods, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseArray(keyPath: keyPath) { (response: DataResponse <[T]>) in
-
-                print("Request: \(response.request!)")   // original url request
-                print("Result: \(response.result)")      // response serialization result
 
                 if let js = String(data: response.data!, encoding: String.Encoding.utf8) {
                     let dic = JSON.init(parseJSON: js)
