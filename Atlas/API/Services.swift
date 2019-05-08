@@ -1,9 +1,9 @@
 //
 //  Services.swift
-//  Kiddzy
+//  Atlas
 //
-//  Created by Andrey Trotsko on 11/2/18.
-//  Copyright © 2018 InTouch mena. All rights reserved.
+//  Created by Andrey Trotsko on 4/18/19.
+//  Copyright © 2019 Mr.Storm lab. All rights reserved.
 //
 
 import Foundation
